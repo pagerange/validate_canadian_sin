@@ -1,10 +1,12 @@
 # Validate Canadian Social Insurance Number
 
-This small script adds a validator for the Canadian SIN to the jQuery.validate plugin.
+This small script adds a validator for the Canadian SIN to the jQuery.validate plugin.  Also included are version in plain javascript and PHP.
 
-## instructions
+## Instructions
 
-Load `validate_sin.js` after you have loaded jQuery and jQuery.validate.
+### For jQuery.validate plugin
+
+Load `jquery.validate.cansin.js` after you have loaded jQuery and jQuery.validate.
 
 Validate your sin field as you would any other form field with jQuery.validate.  For example, for a field named `sin` that is also required, the rule would look like this:
 
@@ -20,6 +22,8 @@ Validate your sin field as you would any other form field with jQuery.validate. 
      )};
 
 ```
+
+## Notes
 
 Validation follows this basic algorithm:
 
