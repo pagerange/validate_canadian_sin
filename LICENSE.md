@@ -1,6 +1,6 @@
 # License
 
- DO WHATEVER YOU WANT TO PUBLIC LICENSE 
+ DO WHATEVER YOU WANT TO PUBLIC LICENSE  
  Version 1, September 2017 
 
  Everyone is permitted to copy and distribute verbatim or modified 
