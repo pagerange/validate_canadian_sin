@@ -88,6 +88,8 @@ This is not as complicated as it seems, as there are only five digits that will 
     return (parseInt(sin) && total % 10 == 0) ? true : this.optional(element);
  }
 
+ ```
+
  ## License
 
  I saw the inspiration for this in a code sample online a while back, but can't remember where or find it anymore.  That snippet was released under the "Do What The Fuck You Want To Public License", so I'll leave this collection under a similar license.
