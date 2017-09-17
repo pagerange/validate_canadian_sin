@@ -25,6 +25,43 @@ Validate your sin field as you would any other form field with jQuery.validate. 
 
 ```
 
+### For Vlucas\Valtron\Validator class (php)
+
+Copy the code in `valtron.validator.cansin.php` and paste it into your code immediately after instantiating the validator.  For example...
+
+```php
+
+    $v = new Valtron\Validator();
+
+    $v->addRule('canSin', function($field, $value) {
+    $sin = preg_replace('/[^0-9]/s', '', $value);
+    $doubled = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9];
+    $total = 0;
+    for($i = 0; $i < strlen($sin); $i++) {
+        $digit = (int) $sin[$i];
+        $total += ($i % 2) ? $doubled[$digit] : $digit ;
+    }
+    return ((int) $sin && $total % 10 === 0) ? true : false;
+}, 'Please enter a valid Canadian Social Insurance Number');
+
+
+```
+
+Then, when setting your rules (for a form field named `sin`):
+
+```php
+
+    $v->rule('canSin', 'sin');
+
+    // Or to set a custom message with the rule...
+
+    $v->rule('canSin', 'sin')->message('Hey, enter a valid SIN!');
+
+
+```
+
+
+
 ## Notes
 
 Validation follows this basic algorithm:
