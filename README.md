@@ -33,7 +33,7 @@ Validation follows this basic algorithm:
 4. Add all the resulting numbers together.
 5. If the final sum can be evenly divided by 10, the number is a valid Canadian SIN.
 
-This is not as complicated as it seems, as there are only five digits that will need to use the added step of adding individual digits of the sum together, so we can pre-calculate them all and put them in an array.
+This is not as complicated as it seems, as there are only five digits that will need to use the added step of adding individual digits of the product together, so we can pre-calculate them all and put them in an array.
 
 
 ```javascript
