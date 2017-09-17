@@ -2,6 +2,25 @@
 
 This small script adds a validator for the Canadian SIN to the jQuery.validate plugin.
 
+## instructions
+
+Load `validate_sin.js` after you have loaded jQuery and jQuery.validate.
+
+Validate your sin field as you would any other form field with jQuery.validate.  For example, for a field named `sin` that is also required, the rule would look like this:
+
+```javascript
+
+    $('#my_form').validate({
+        rules: {
+            "sin": { 
+                required:true,
+                canSin:true 
+            },
+         }  
+     )};
+
+```
+
 Validation follows this basic algorithm:
 
 1. Multiply the SIN by `121212121`.
@@ -10,7 +29,7 @@ Validation follows this basic algorithm:
 4. Add all the resulting numbers together.
 5. If the final sum can be evenly divided by 10, the number is a valid Canadian SIN.
 
-This is not a complicated as it seems, as there are only five digits that will need to use the added step of adding individual digits of the sum together, so we can pre-calculate them all and put them in an array.
+This is not as complicated as it seems, as there are only five digits that will need to use the added step of adding individual digits of the sum together, so we can pre-calculate them all and put them in an array.
 
 
 ```javascript
@@ -38,7 +57,7 @@ This is not a complicated as it seems, as there are only five digits that will n
     // double[7] = 2 * 7 = 14 = 1 + 4 = 5;
     // double[8] = 2 * 8 = 16 = 1 + 6 = 7;
     // double[9] = 2 * 9 = 18 = 1 + 8 = 9;
-    // Simplified:
+    // or:
     var double = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9];
 
     // Individual digit from sin string
@@ -64,6 +83,7 @@ This is not a complicated as it seems, as there are only five digits that will n
     // total mod 10 === 0
     return (parseInt(sin) && total % 10 == 0) ? true : this.optional(element);
  }
+
 
 
 ```
