@@ -88,6 +88,27 @@ This is not as complicated as it seems, as there are only five digits that will 
     return (parseInt(sin) && total % 10 == 0) ? true : this.optional(element);
  }
 
+ ## License
+
+ I saw the inspiration for this in a code sample online a while back, but can't remember where or find it anymore.  That snippet was released under the "Do What The Fuck You Want To Public License", so I'll leave this collection under the same license.
+
+ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+ Version 2, December 2004 
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
+
+ Everyone is permitted to copy and distribute verbatim or modified 
+ copies of this license document, and changing it is allowed as long 
+ as the name is changed. 
+
+ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+ 0. You just DO WHAT THE FUCK YOU WANT TO.
+
+ http://www.wtfpl.net/about/
+
+
 
 
 ```
