@@ -61,6 +61,10 @@ Then, when setting your rules (for a form field named `sin`):
 ```
 
 
+### For plain Javascript or PHP versions
+
+These functions simply return `true` if the number is a valid sin, `false` if not.
+
 
 ## Notes
 
