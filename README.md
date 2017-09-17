@@ -1,8 +1,10 @@
 # Validate Canadian Social Insurance Number
 
-This small script adds a validator for the Canadian SIN to the jQuery.validate plugin.  Also included are version in plain javascript and PHP.
+This small script adds a validator for the Canadian SIN to the jQuery.validate plugin.  There's a version, also, for `Valtron\Validator`, the PHP validation class.  Also included are version in plain javascript and PHP.
 
 The jQuery Validate plugin can be found here: https://jqueryvalidation.org/
+
+The Vlucas\Valitron\Validator can be found here: https://github.com/vlucas/valitron
 
 ## Instructions
 
@@ -25,13 +27,15 @@ Validate your sin field as you would any other form field with jQuery.validate. 
 
 ```
 
-### For Vlucas\Valtron\Validator class (php)
+### For Vlucas\Valitron\Validator class (php)
 
-Copy the code in `valtron.validator.cansin.php` and paste it into your code immediately after instantiating the validator.  For example...
+Copy the code in `valitron.validator.cansin.php` and paste it into your code immediately after instantiating the validator.  
+
+Sample implementation:
 
 ```php
 
-    $v = new Valtron\Validator();
+    $v = new Valitron\Validator();
 
     $v->addRule('canSin', function($field, $value) {
     $sin = preg_replace('/[^0-9]/s', '', $value);
