@@ -2,6 +2,8 @@
 
 This small script adds a validator for the Canadian SIN to the jQuery.validate plugin.  Also included are version in plain javascript and PHP.
 
+The jQuery Validate plugin can be found here: https://jqueryvalidation.org/
+
 ## Instructions
 
 ### For jQuery.validate plugin
