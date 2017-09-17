@@ -94,7 +94,7 @@ This is not as complicated as it seems, as there are only five digits that will 
 
  I saw the inspiration for this in a code sample online a while back, but can't remember where or find it anymore.  That snippet was released under the "Do What The Fuck You Want To Public License", so I'll leave this collection under a similar license.
 
- DO WHATEVER YOU WANT TO PUBLIC LICENSE 
+ DO WHATEVER YOU WANT TO PUBLIC LICENSE  
  Version 1, September 2017 
 
  Everyone is permitted to copy and distribute verbatim or modified 
