@@ -1,7 +1,7 @@
 <?php
 
 /**
-  * Validate Canadian SIN - Valtron\Validator version
+  * Validate Canadian SIN - Valitron\Validator version
   * Uses LUHN/Mod-10
   * @author Steve George <steve@pagerange.com>
   * @updated 2017-09-17
