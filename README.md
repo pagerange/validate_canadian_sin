@@ -139,14 +139,10 @@ This is not as complicated as it seems, as there are only five digits that will 
 
  ## License
 
- I saw the inspiration for this in a code sample online a while back, but can't remember where or find it anymore.  That snippet was released under the "Do What The Fuck You Want To Public License", so I'll leave this collection under a similar license.
+ I saw the inspiration for this in a code sample online a while back (specifically the part about pre-calculating the double values of the even position SIN digits), but can't remember where, and can't find it anymore.  That snippet was released under the "Do What The Fuck You Want To Public License", so I'll leave this collection under a similar license.
 
  DO WHATEVER YOU WANT TO PUBLIC LICENSE  
  Version 1, September 2017 
-
- Everyone is permitted to copy and distribute verbatim or modified 
- copies of this license document, and changing it is allowed as long 
- as the name is changed. 
 
  DO WHATEVER YOU WANT TO PUBLIC LICENSE 
  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
